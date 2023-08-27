@@ -19,7 +19,7 @@ const Page = () => {
             <span
                 className="font-bold text-3xl mb-4"
             >
-                Log in your account
+                Create an account
             </span>
             <div
                 className="w-full flex justify-center gap-2 items-center"
