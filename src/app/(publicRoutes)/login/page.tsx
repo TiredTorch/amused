@@ -1,6 +1,6 @@
 'use client'
 
-import { LoginForm } from "@components"
+import { LoginForm, LoginFormValuesType } from "@components"
 import { useCallback, useMemo } from "react"
 
 const Page = () => {
@@ -9,7 +9,7 @@ const Page = () => {
         password: ""
     }), [])
 
-    const handleSubmit = useCallback((values: any) => {
+    const handleSubmit = useCallback((values: LoginFormValuesType) => {
         console.log(values)
     }, [])
 

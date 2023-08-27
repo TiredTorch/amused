@@ -3,12 +3,12 @@
 import { Button, Textfield } from "@components"
 import { Form, Formik } from "formik"
 import { FC } from "react"
-import { LoginFormProps } from "./LoginForm.types"
-import { loginFormValidationSchema } from "./LoginForm.validation"
+import { RegisterFormProps } from "./RegisterForm.types"
+import { registerFormValidationSchema } from "./RegisterForm.validation"
 import { AppRoutes } from "@types"
 import Link from "next/link"
 
-export const LoginForm: FC<LoginFormProps> = ({
+export const RegisterForm: FC<RegisterFormProps> = ({
     initialValues,
     onSubmit
 }) => {
@@ -16,7 +16,7 @@ export const LoginForm: FC<LoginFormProps> = ({
         <Formik
             initialValues={initialValues}
             onSubmit={onSubmit}
-            validationSchema={loginFormValidationSchema}
+            validationSchema={registerFormValidationSchema}
         >
             {({
                 values,
@@ -47,19 +47,28 @@ export const LoginForm: FC<LoginFormProps> = ({
                         onBlur={handleBlur}
                         error={touched.password && errors.password}
                     />
+                    <Textfield 
+                        type="password"
+                        label="Confirm Password"
+                        name="confirmPassword"
+                        value={values.confirmPassword}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        error={touched.confirmPassword && errors.confirmPassword}
+                    />
                     <div
                         className="w-full flex items-center justify-center gap-2 mt-4"
                     >
                         <Button btnType="submit">
-                            Log in
+                            Sign up
                         </Button>
                         or
                         <Link 
-                            href={AppRoutes.REGISTER}
+                            href={AppRoutes.LOGIN}
                             className="outline-none"
                         >
                             <Button >
-                                Create an account
+                                Log in your account
                             </Button>
                         </Link>
                     </div>
