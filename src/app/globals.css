@@ -3,7 +3,5 @@
 @tailwind utilities;
 
 @layer components {
-  body {
-    @apply bg-indigo-700 text-blue-400 font-semibold
-  }
+  
 }
