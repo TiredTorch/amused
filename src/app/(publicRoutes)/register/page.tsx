@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Button } from "@components"
 import { AppRoutes } from "@types"
 
-export const Page = () => {
+const Page = () => {
     return (
         <>
             register
