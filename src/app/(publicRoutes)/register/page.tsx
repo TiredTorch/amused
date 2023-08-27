@@ -1,23 +1,33 @@
-import Link from "next/link"
-import { Button } from "@components"
-import { AppRoutes } from "@types"
+'use client'
 
-export const Page = () => {
+import { RegisterForm, RegisterFormValuesType } from "@components"
+import { useCallback, useMemo } from "react"
+
+const Page = () => {
+    const formInitialValues = useMemo(() => ({
+        login: "",
+        password: "",
+        confirmPassword: ""
+    }), [])
+
+    const handleSubmit = useCallback((values: RegisterFormValuesType) => {
+        console.log(values)
+    }, [])
+
     return (
         <>
-            register
+            <span
+                className="font-bold text-3xl mb-4"
+            >
+                Create an account
+            </span>
             <div
                 className="w-full flex justify-center gap-2 items-center"
             >
-                <Button>
-                    Sign up
-                </Button>
-                or
-                <Link href={AppRoutes.LOGIN}>
-                    <Button>
-                        Log in your account
-                    </Button>
-                </Link>
+                <RegisterForm
+                    onSubmit={handleSubmit}
+                    initialValues={formInitialValues}
+                />
             </div>
         </>
     )

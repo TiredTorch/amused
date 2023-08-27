@@ -4,13 +4,15 @@ import { ButtonType } from "@types"
 
 export const Button: FC<PropsWithChildren<ButtonProps>> = ({
     children,
+    btnType = "button",
     type = ButtonType.DEFAULT,
     onClick
 }) => {
     return (
         <button
+            type={btnType}
             onClick={onClick}
-            className={`${type} text-indigo-900 bg-indigo-600 p-2 rounded-lg hover:bg-indigo-500 hover:text-indigo-800 duration-500`}
+            className={`${type} outline-none text-indigo-900 bg-indigo-600 p-2 rounded-lg hover:bg-indigo-500 hover:text-indigo-800 duration-500`}
         >
             {children}
         </button>
