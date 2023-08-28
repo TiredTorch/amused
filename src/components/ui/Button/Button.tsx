@@ -1,3 +1,4 @@
+'use client'
 import { FC, PropsWithChildren } from "react"
 import { ButtonProps } from "./Button.types"
 import { ButtonType } from "@types"
