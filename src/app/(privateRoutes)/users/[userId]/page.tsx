@@ -2,12 +2,12 @@ const Page = ({
     params
 }: {
     params: {
-        friendId: string
+        userId: string
     }
 }) => {
     return (
         <div>
-            friend id: {params.friendId}
+            friend id: {params.userId}
         </div>
     )
 }

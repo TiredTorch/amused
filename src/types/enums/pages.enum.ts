@@ -4,6 +4,6 @@ export enum AppRoutes {
     DASHBOARD = "/",
     PROFILE = "/profile",
     NEW_POST = "/newPost",
-    FRIENDS = "/friends",
-    CHAT = "/friends/chat"
+    FRIENDS = "/users",
+    CHAT = "/users/chat"
 }
