@@ -12,7 +12,7 @@ export const Layout = ({
 }) => {
     return (
         <div
-            className="w-screen h-screen bg-indigo-950 text-blue-400 font-semibold flex items-center justify-center"
+            className="w-screen h-[100dvh] bg-indigo-950 text-blue-400 font-semibold flex items-center justify-center"
         >
             {children}
             <div
