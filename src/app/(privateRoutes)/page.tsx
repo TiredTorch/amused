@@ -96,7 +96,7 @@ const Page = () => {
 
     return (
         <div
-            className="w-screen h-screen flex flex-row p-20 gap-10 overflow-y-hidden"
+            className="w-screen h-full flex flex-row p-20 gap-10 overflow-y-hidden"
         >
             {mock.map((post, id) => (
                 <div

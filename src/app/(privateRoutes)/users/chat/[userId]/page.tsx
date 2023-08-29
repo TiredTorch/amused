@@ -108,7 +108,7 @@ const Page = ({
 
     return (
         <div
-            className="w-screen h-screen flex flex-col justify-between"
+            className="w-screen h-full flex flex-col justify-between"
         >
             <div
                 className="flex gap-4 items-center bg-cyan-800 justify-between px-10 py-3"
