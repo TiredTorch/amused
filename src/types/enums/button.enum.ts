@@ -1,4 +1,4 @@
 export enum ButtonType {
-    DEFAULT = "",
-    ICON = ""
+    DEFAULT,
+    ICON 
 }
