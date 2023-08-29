@@ -116,7 +116,7 @@ const Page = () => {
                             height={200}
                             src={user.avatar}
                             alt={`${user.name}-avatar-image`}
-                            className="w-20 h-20"
+                            className="w-20 h-20 rounded-full"
                             />
                         </Link>
                         <Link href={`${AppRoutes.CHAT}/${user.id}`}>
