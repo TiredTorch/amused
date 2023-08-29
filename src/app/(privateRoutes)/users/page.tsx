@@ -92,7 +92,7 @@ const Page = () => {
 
     return (
         <div
-            className="bg-indigo-500 w-9/12 h-4/5 rounded p-4 pb-0 flex flex-col justify-between"
+            className="bg-indigo-500 w-9/12 h-full rounded px-4 flex flex-col justify-between"
         >
             <div
                 className="flex items-center gap-10 px-10 h-1/6"
