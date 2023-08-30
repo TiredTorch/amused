@@ -19,7 +19,7 @@ export const Layout = ({
             >
                 {children}
                 <div
-                    className="bg-indigo-400 flex justify-evenly border-t-4 border-b-0 rounded-t-2xl border-black p-2 gap-2"
+                    className="bg-indigo-400 flex justify-evenly border-t-4 rounded-t-2xl border-black p-2 gap-2"
                 >
                     <Link href={AppRoutes.USER_LIST} className="w-full">
                         <Button>
