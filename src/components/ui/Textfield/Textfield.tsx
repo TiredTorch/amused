@@ -17,11 +17,13 @@ export const Textfield: FC<TextfieldProps> = ({
         <div
             className="w-full"
         >
-            <label
-                className="block mb-2 font-medium text-base"
-            >
-                {label}
-            </label>
+            {label && 
+                <label
+                    className="block mb-2 font-medium text-base"
+                >
+                    {label}
+                </label>
+            }
             <input
                 className="w-full rounded-sm bg-indigo-300 h-8 p-2.5 text-indigo-700 focus:ring-indigo-950 focus:border-0 outline-none"
                 value={value}
