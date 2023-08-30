@@ -2,8 +2,8 @@
 
 import { ReactNode } from "react"
 import Link from "next/link"
-import { Button, DashboardIcon, UsersIcon, NewPostIcon, ProfileIcon } from "@components"
-import { AppRoutes, ButtonType } from "@types"
+import { Button, DashboardIcon, UsersIcon, ProfileIcon } from "@components"
+import { AppRoutes } from "@types"
 
 export const Layout = ({
     children
@@ -12,14 +12,14 @@ export const Layout = ({
 }) => {
     return (
         <div
-            className="w-screen h-[100dvh] bg-indigo-300 text-blue-400 font-semibold flex items-center justify-center overflow-hidden"
+            className="w-screen h-[100dvh] max-h-[100dvh] bg-indigo-300 text-blue-400 font-semibold flex items-center justify-center overflow-hidden"
         >
             <div
-                className="h-full bg-indigo-700 w-full max-w-4xl flex flex-col justify-between border-x-4 border-black"
+                className="h-[100%] bg-indigo-700 w-full max-w-4xl flex flex-col justify-between border-x-4 border-black max-h-[100dvh]"
             >
                 {children}
                 <div
-                    className="bg-indigo-400 flex justify-evenly border-t-4 rounded-t-2xl border-black p-2 gap-2"
+                    className="bg-indigo-400 flex justify-evenly border-t-4 rounded-t-2xl border-black p-2 gap-2 h-[60px]"
                 >
                     <Link href={AppRoutes.USER_LIST} className="w-full">
                         <Button>
