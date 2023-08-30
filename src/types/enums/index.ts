@@ -1,2 +1,2 @@
-export * from "./button.enum"
+export * from "./components.enum"
 export * from "./pages.enum"

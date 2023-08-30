@@ -23,12 +23,12 @@ export const Layout = ({
                         <NewPostIcon/>
                     </Button>
                 </Link>
-                <Link href={AppRoutes.PROFILE}>
+                <Link href={`${AppRoutes.USER}myId`}>
                     <Button type={ButtonType.ICON}>
                         <ProfileIcon/>
                     </Button>
                 </Link>
-                <Link href={AppRoutes.FRIENDS}>
+                <Link href={AppRoutes.USER_LIST}>
                     <Button type={ButtonType.ICON}>
                         <FriendsIcon/>
                     </Button>
