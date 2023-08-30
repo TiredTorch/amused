@@ -21,6 +21,7 @@
     "paths": {
       "@components": ["./src/components"],
       "@types": ["./src/types"],
+      "@containers": ["./src/containers"],
       "@assets/*": ["./src/assets/*"],
       "@/*": ["./src/*"]
     }

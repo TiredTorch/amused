@@ -1,6 +1,6 @@
 export * from "./NewPostIcon/NewPostIcon"
 export * from "./DashboardIcon/DashboardIcon"
-export * from "./FriendsIcon/FriendsIcon"
+export * from "./UsersIcon/UsersIcon"
 export * from "./ProfileIcon/ProfileIcon"
 export * from "./SearchIcon/SearchIcon"
 export * from "./OptionsIcon/OptionsIcon"
