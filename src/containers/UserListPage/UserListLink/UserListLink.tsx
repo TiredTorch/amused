@@ -10,7 +10,7 @@ export const UserListLink = () => {
       className="bg-blue-500 w-full min-h-[120px] p-2 flex items-center gap-2 overflow-hidden"
     >
       <Link 
-        className="h-[calc(4dvi+25px)] w-[calc(4dvi+25px)]"
+        className="min-h-[104px] min-w-[104px]"
         href={`${AppRoutes.USER}id`}
       >
         <Image
@@ -18,19 +18,20 @@ export const UserListLink = () => {
           alt="alt"
           width={100}
           height={100}
-          className="h-[calc(4dvi+25px)] w-[calc(4dvi+25px)]"
+          className="h-[104px] w-[104px] rounded-3xl border-black border-2"
         />
       </Link>
-      <div
+      <Link
+        href={`${AppRoutes.CHAT}id`}
         className="flex flex-col text-indigo-900"
       >
         <span
-          className="text-2xl"
+          className="text-2xl text-indigo-950"
         >Username</span>
         <span
           className="text-xl w-full truncate"
         >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, voluptatum. Minus doloremque provident ipsa laudantium nam expedita cum assumenda soluta?</span>
-      </div>
+      </Link>
     </div>
   )
 }
