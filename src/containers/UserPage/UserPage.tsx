@@ -1,5 +1,6 @@
 'use client'
 
+import { SharedPost } from "./SharedPost/SharedPost"
 import { UserPageHeader } from "./UserPageHeader/UserPageHeader"
 
 export const UserPage = () => {
@@ -9,9 +10,14 @@ export const UserPage = () => {
     >
       <UserPageHeader/>
       <div
-        className="h-2/3 bg-red-900 p-2 pb-0"
+        className="h-2/3 px-2 py-6 overflow-auto flex flex-col gap-10"
       >
-        sdsds
+        <SharedPost/>
+        <SharedPost/>
+        <SharedPost/>
+        <SharedPost/>
+        <SharedPost/>
+        <SharedPost/>
       </div>
     </div>
   )

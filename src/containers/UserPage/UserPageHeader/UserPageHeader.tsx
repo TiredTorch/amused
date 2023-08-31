@@ -6,7 +6,7 @@ import dividerImage from "@assets/divider-music.png"
 export const UserPageHeader = () => {
   return (
     <div
-        className="flex justify-between items-center flex-col h-1/3"
+        className="flex justify-between items-center flex-col h-1/3 pb-2 shadow-lg"
       >
         <div
           className="p-2 h-2/3 flex items-center gap-4 w-full"
