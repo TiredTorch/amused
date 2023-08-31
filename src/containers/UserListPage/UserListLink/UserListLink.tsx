@@ -7,7 +7,7 @@ import Link from "next/link"
 export const UserListLink = () => {
   return (
     <div
-      className="bg-blue-500 w-full min-h-[120px] p-2 flex items-center gap-2 overflow-hidden"
+      className="bg-blue-500 w-full min-h-[120px] p-2 flex items-center gap-2 overflow-hidden rounded-lg"
     >
       <Link 
         className="min-h-[104px] min-w-[104px]"
