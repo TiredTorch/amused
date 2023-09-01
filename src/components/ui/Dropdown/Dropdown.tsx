@@ -1,14 +1,14 @@
 'use client'
-import { ButtonProps } from "./Button.types"
+import { DropdownProps } from "./Dropdown.types"
 
-export const Button: ButtonProps = ({
+export const Dropdown: DropdownProps = ({
     children
 }) => {
     return (
-        <button
+        <div
             className="bg-red-300"
         >
             {children}
-        </button>
+        </div>
     )
 }

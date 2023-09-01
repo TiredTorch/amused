@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Button } from './Button';
+import { ModalWindow } from './ModalWindow';
 
 const meta = {
-  title: 'Base Components/Button',
-  component: Button
-} satisfies Meta<typeof Button>;
+  title: 'Base Components/ModalWindow',
+  component: ModalWindow
+} satisfies Meta<typeof ModalWindow>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

@@ -1,14 +1,14 @@
 'use client'
-import { ButtonProps } from "./Button.types"
+import { InputProps } from "./Input.types"
 
-export const Button: ButtonProps = ({
+export const Input: InputProps = ({
     children
 }) => {
     return (
-        <button
+        <div
             className="bg-red-300"
         >
             {children}
-        </button>
+        </div>
     )
 }
