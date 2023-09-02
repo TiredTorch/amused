@@ -12,6 +12,11 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: "Aboba"
+    label: "Default dropdown",
+    options: [
+      "Option 1",
+      "Option 2",
+      "Option 3"
+    ]
   }
 };

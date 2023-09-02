@@ -6,7 +6,7 @@ export const Button: ButtonProps = ({
 }) => {
     return (
         <button
-            className="bg-red-300"
+            className="bg-primary text-text-dark p-2 rounded-md border-2 border-dark hover:bg-dark hover:border-text-primary duration-200"
         >
             {children}
         </button>

@@ -1,5 +1,6 @@
-import { FC, PropsWithChildren } from "react";
+import { FC, ReactNode } from "react";
 
-export type DropdownProps = FC<PropsWithChildren<{
-    
-}>>
+export type DropdownProps = FC<{
+    options: Array<ReactNode>,
+    label: string;
+}>
