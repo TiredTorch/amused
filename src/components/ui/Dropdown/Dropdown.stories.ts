@@ -20,3 +20,15 @@ export const Default: Story = {
     ]
   }
 };
+
+export const OptionLabel: Story = {
+  args: {
+    label: "Option as label dropdown",
+    options: [
+      "Option 1",
+      "Option 2",
+      "Option 3"
+    ],
+    placeOptionAsLabel: true
+  }
+};
