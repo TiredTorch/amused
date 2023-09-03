@@ -12,6 +12,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: "Aboba"
+    children: "Modal content",
+    onClose: () => console.log("close action!"),
+    isOpen: true
   }
 };

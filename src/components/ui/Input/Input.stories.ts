@@ -12,6 +12,25 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: "Aboba"
+    placeholder: "Input"
+  }
+};
+
+export const LabelInput: Story = {
+  args: {
+    label: "Label example"
+  }
+};
+
+export const ErrorInput: Story = {
+  args: {
+    errorText: "Some error happend"
+  }
+};
+
+export const FullInpuit: Story = {
+  args: {
+    errorText: "Some error happend",
+    label: "Label example",
   }
 };

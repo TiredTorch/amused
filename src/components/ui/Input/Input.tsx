@@ -2,13 +2,32 @@
 import { InputProps } from "./Input.types"
 
 export const Input: InputProps = ({
-    children
+    label, 
+    errorText,
+    ...props
 }) => {
     return (
-        <div
-            className="bg-red-300"
+        <div 
+            className=""
         >
-            {children}
-        </div>
+            {label && 
+                <label 
+                    className="block mb-2 font-medium text-text-dark"
+                >
+                    {label}
+                </label>
+            }
+            <input 
+                {...props}
+                className="bg-primary border border-dark text-text-dark rounded-lg block w-full p-2.5 placeholder:text-text-primary"
+            />
+            {errorText && 
+                <div
+                    className="text-red-600"
+                >
+                    {errorText}
+                </div>
+            }
+        </div> 
     )
 }
