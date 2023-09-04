@@ -10,7 +10,7 @@ export const Button: ButtonProps = ({
     return (
         <button
             {...props}
-            className={twMerge("bg-primary text-text-dark p-2 rounded-md border-2 border-dark hover:bg-dark hover:border-text-primary duration-200", className)}
+            className={twMerge("bg-primary text-text-dark p-2 w-full rounded-md border-2 border-dark hover:bg-dark hover:border-text-primary duration-200 font-semibold", className)}
         >
             {children}
         </button>

@@ -1,6 +1,6 @@
-import { FC, HTMLAttributes, PropsWithChildren } from "react";
+import { DetailedHTMLProps, FC, InputHTMLAttributes, PropsWithChildren } from "react";
 
-export type InputProps = FC<PropsWithChildren<HTMLAttributes<HTMLInputElement> & {
+export type InputProps = FC<PropsWithChildren<DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> & {
     label?: string;
     errorText?: string;
 }>>
