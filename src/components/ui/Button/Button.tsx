@@ -1,6 +1,6 @@
 'use client'
-import { twMerge } from "tailwind-merge"
 import { ButtonProps } from "./Button.types"
+import { getButtonStyles } from "./Button.styles"
 
 export const Button: ButtonProps = ({
     children,
@@ -10,7 +10,7 @@ export const Button: ButtonProps = ({
     return (
         <button
             {...props}
-            className={twMerge("bg-primary text-text-dark p-2 w-full h-full rounded-md border-2 border-dark hover:bg-dark hover:border-text-primary duration-200 font-semibold", className)}
+            className={getButtonStyles(className)}
         >
             {children}
         </button>

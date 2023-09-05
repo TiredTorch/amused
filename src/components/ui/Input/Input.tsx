@@ -1,14 +1,16 @@
 'use client'
+import { getInputStyles } from "./Input.styles"
 import { InputProps } from "./Input.types"
 
 export const Input: InputProps = ({
     label, 
     errorText,
+    className,
     ...props
 }) => {
     return (
         <div 
-            className="w-full flex flex-col"
+            className="w-full flex flex-col border border-dark"
         >
             {label && 
                 <label 
@@ -19,7 +21,7 @@ export const Input: InputProps = ({
             }
             <input 
                 {...props}
-                className="bg-primary border border-dark text-text-dark rounded-lg block w-full p-2.5 placeholder:text-text-primary outline-none"
+                className={getInputStyles(className)}
             />
             {errorText && 
                 <div 

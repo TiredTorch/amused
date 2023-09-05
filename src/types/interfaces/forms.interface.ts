@@ -16,3 +16,7 @@ export type EditProfileFormValuesType = {
     userName?: string; 
     description?: string;
 }
+
+export type SearchFormValuesType = {
+    searchField: string;
+}

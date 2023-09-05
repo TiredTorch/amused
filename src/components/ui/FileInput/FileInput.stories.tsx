@@ -20,7 +20,7 @@ export const Default: Story = {
     children: (
       <>
         <p 
-          className="mb-2 text-sm text-gray-500 dark:text-gray-400 flex flex-col justify-center items-center"
+          className="mb-2 text-sm flex flex-col justify-center items-center text-text-primary"
         >
           <span
             className="font-semibold"

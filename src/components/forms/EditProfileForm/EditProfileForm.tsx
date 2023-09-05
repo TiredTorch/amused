@@ -31,7 +31,7 @@ export const EditProfileForm: FC<EditProfileFormProps> = ({
                     className="w-full flex flex-col gap-4 items-center justify-center"
                 >
                     <div
-                        className="w-full flex gap-8"
+                        className="w-full flex gap-8 text-text-dark"
                     >
                         <div
                             className="w-1/2"
@@ -41,7 +41,7 @@ export const EditProfileForm: FC<EditProfileFormProps> = ({
                                 onChange={(e) => setFieldValue("image", e.target.files?.[0])}
                             >
                                 <p 
-                                    className="mb-2 text-sm text-gray-500 dark:text-gray-400 flex flex-col justify-center items-center"
+                                    className="mb-2 text-sm flex flex-col justify-center items-center"
                                 >
                                     <span
                                         className="font-semibold"
@@ -53,7 +53,7 @@ export const EditProfileForm: FC<EditProfileFormProps> = ({
                                     </span>
                                 </p>
                                 <p 
-                                        className="text-xs text-gray-500 dark:text-gray-400"
+                                        className="text-xs"
                                     >
                                         SVG, PNG, JPG
                                 </p>
