@@ -1,5 +1,5 @@
 import { object, string } from "yup";
 
-export const searchFormValidationSchema = object().shape({
+export const sendMessageFormValidationSchema = object().shape({
     searchField: string()
 })
