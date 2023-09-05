@@ -27,7 +27,7 @@ export const LoginForm: FC<LoginFormProps> = ({
                 isSubmitting
             })=> (
                 <Form
-                    className="w-2/5 flex flex-col gap-4 items-center justify-center"
+                    className="w-full flex flex-col gap-4 items-center justify-center"
                 >
                     <Input 
                         label="Login"
