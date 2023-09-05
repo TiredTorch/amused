@@ -20,3 +20,7 @@ export type EditProfileFormValuesType = {
 export type SearchFormValuesType = {
     searchField: string;
 }
+
+export type SendMessageFormValuesType = {
+    message: string;
+}
