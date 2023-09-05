@@ -1,7 +1,14 @@
 'use client'
 
+import { LoginForm } from "@components"
+
 export const LoginPage = () => {
   return (
-    <div>LoginPage</div>
+    <LoginForm 
+      onSubmit={console.log} 
+      initialValues={{
+        login: "",
+        password: ""
+      }}/>
   )
 }

@@ -19,7 +19,7 @@ export const Input: InputProps = ({
             }
             <input 
                 {...props}
-                className="bg-primary border border-dark text-text-dark rounded-lg block w-full p-2.5 placeholder:text-text-primary"
+                className="bg-primary border border-dark text-text-dark rounded-lg block w-full p-2.5 placeholder:text-text-primary outline-none"
             />
             {errorText && 
                 <div 

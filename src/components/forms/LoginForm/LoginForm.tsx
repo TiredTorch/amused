@@ -7,7 +7,6 @@ import { LoginFormProps } from "./LoginForm.types"
 import { loginFormValidationSchema } from "./LoginForm.validation"
 import { AppRoutes } from "@types"
 import Link from "next/link"
-import { boolean } from "yup"
 
 export const LoginForm: FC<LoginFormProps> = ({
     initialValues,
@@ -25,7 +24,6 @@ export const LoginForm: FC<LoginFormProps> = ({
                 touched,
                 handleChange,
                 handleBlur,
-                handleSubmit,
                 isSubmitting
             })=> (
                 <Form
@@ -40,6 +38,7 @@ export const LoginForm: FC<LoginFormProps> = ({
                         errorText={touched.login ? errors.login : undefined}
                     />
                     <Input 
+                        autoComplete="password"
                         label="Password"
                         type="password"
                         name="password"
@@ -51,7 +50,10 @@ export const LoginForm: FC<LoginFormProps> = ({
                     <div
                         className="w-full flex items-center justify-center gap-2 mt-4"
                     >
-                        <Button>
+                        <Button
+                            type="submit"
+                            disabled={isSubmitting}
+                        >
                             Log in
                         </Button>
                         or

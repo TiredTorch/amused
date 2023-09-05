@@ -1,6 +1,6 @@
 'use client'
 
-import { Button, SearchIcon, Textfield } from "@components"
+import { Button, SearchIcon } from "@components"
 import { UserListLink } from "./UserListLink/UserListLink"
 
 export const UserListPage = () => {
@@ -11,7 +11,6 @@ export const UserListPage = () => {
       <div
         className="bg-indigo-400 p-2 border-b-4 border-black rounded-b-2xl mb-2 flex items-center justify-center gap-4"
       >
-        <Textfield/>
         <div>
           <Button>
             <SearchIcon/>
