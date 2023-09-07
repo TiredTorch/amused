@@ -3,6 +3,8 @@
 import Image from "next/image"
 import dividerImage from "@assets/divider-music.png"
 import { Dropdown, OptionsIcon } from "@components"
+import Link from "next/link"
+import { AppRoutes } from "@types"
 
 export const UserPageHeader = () => {
   return (
@@ -31,7 +33,22 @@ export const UserPageHeader = () => {
             className="h-full flex justify-start items-start pt-4"
           >
             <Dropdown 
-              options={["Edit Profile", "Log out"]} 
+              options={[
+                <Link 
+                  key="config_profile_link" 
+                  href={AppRoutes.CONFIG_PROFILE} 
+                  className="h-full w-full"
+                >
+                  Edit Profile 
+                </Link>,
+                <Link 
+                  key="logout_link" 
+                  href={AppRoutes.LOGIN}
+                  className="h-full w-full"
+                >
+                  Log out
+                </Link>
+              ]} 
               label={<OptionsIcon/>}
               hideShevron
             />
