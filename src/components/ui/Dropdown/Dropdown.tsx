@@ -6,7 +6,8 @@ import ClickAwayListener from "react-click-away-listener"
 export const Dropdown: DropdownProps = ({
     options,
     label,
-    placeOptionAsLabel
+    placeOptionAsLabel,
+    hideShevron
 }) => {
 
     const [currentOptionId, setCurrentOptionId] = useState<number>(-1)
@@ -37,14 +38,16 @@ export const Dropdown: DropdownProps = ({
                     <span>
                         {currentOptionId !== -1 ? options[currentOptionId] : label}
                     </span>
-                    <svg className="w-2.5 h-2.5 ml-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
-                    </svg>
+                    {!hideShevron &&
+                        <svg className="w-2.5 h-2.5 ml-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
+                        </svg>
+                    }
                 </button>
             </ClickAwayListener>
             {isOpen && 
                 <div 
-                    className="z-10 bg-light text-text-primary divide-y divide-text-dark rounded-lg shadow w-full"
+                    className="z-10 bg-light text-text-primary divide-y divide-text-dark rounded-lg shadow absolute"
                 >
                     <ul 
                         className="py-2"

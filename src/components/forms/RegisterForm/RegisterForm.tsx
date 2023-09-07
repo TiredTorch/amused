@@ -72,7 +72,7 @@ export const RegisterForm: FC<RegisterFormProps> = ({
                             className="outline-none w-full"
                         >
                             <Button>
-                                Create an account
+                                Log in existing one
                             </Button>
                         </Link>
                     </div>

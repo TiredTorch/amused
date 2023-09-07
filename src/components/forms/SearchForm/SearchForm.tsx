@@ -40,7 +40,7 @@ export const SearchForm: FC<SearchFormProps> = ({
                             <SearchIcon/>
                         </Button>
                         <Input 
-                            className="border-none rounded-none"
+                            className="border-none rounded-none py-[11px]"
                             name="searchField"
                             value={values.searchField}
                             onChange={handleChange}

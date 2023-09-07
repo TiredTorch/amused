@@ -17,5 +17,7 @@
 }
 
 @layer components {
-  
+  body {
+    overflow: hidden;
+  }
 }
