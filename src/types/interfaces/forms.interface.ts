@@ -8,3 +8,19 @@ export type RegisterFormValuesType = {
     password: string;
     confirmPassword: string;
 }
+
+export type EditProfileFormValuesType = {
+    login?: string;
+    password?: string;
+    image?: File;
+    userName?: string; 
+    description?: string;
+}
+
+export type SearchFormValuesType = {
+    searchField: string;
+}
+
+export type SendMessageFormValuesType = {
+    message: string;
+}

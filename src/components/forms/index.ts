@@ -1,2 +1,6 @@
+export * from "./AddPostForm/AddPostForm"
+export * from "./EditProfileForm/EditProfileForm"
 export * from "./LoginForm/LoginForm"
 export * from "./RegisterForm/RegisterForm"
+export * from "./SearchForm/SearchForm"
+export * from "./SendMessageForm/SendMessageForm"

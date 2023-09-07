@@ -1,7 +1,5 @@
-import { ButtonType } from "@types"
+import { ButtonHTMLAttributes, DetailedHTMLProps, FC } from "react";
 
-export type ButtonProps = {
-    type?: ButtonType;
-    onClick?: VoidFunction;
-    btnType?: "submit" | "button"
-}
+export type ButtonProps = FC<DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> & {
+    
+}>

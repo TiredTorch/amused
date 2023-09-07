@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Textfield } from "@components"
+import { Button, Input } from "@components"
 import { Form, Formik } from "formik"
 import { FC } from "react"
 import { RegisterFormProps } from "./RegisterForm.types"
@@ -24,51 +24,55 @@ export const RegisterForm: FC<RegisterFormProps> = ({
                 touched,
                 handleChange,
                 handleBlur,
-                handleSubmit,
                 isSubmitting
             })=> (
                 <Form
-                    className="w-2/5 flex flex-col gap-4 items-center justify-center"
+                    className="w-full flex flex-col gap-4 items-center justify-center"
                 >
-                    <Textfield 
+                    <Input 
                         label="Login"
                         name="login"
                         value={values.login}
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        error={touched.login && errors.login}
+                        errorText={touched.login ? errors.login : undefined}
                     />
-                    <Textfield 
-                        type="password"
+                    <Input 
+                        autoComplete="password"
                         label="Password"
+                        type="password"
                         name="password"
                         value={values.password}
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        error={touched.password && errors.password}
+                        errorText={touched.password ? errors.password : undefined}
                     />
-                    <Textfield 
-                        type="password"
+                    <Input 
+                        autoComplete="password"
                         label="Confirm Password"
+                        type="password"
                         name="confirmPassword"
                         value={values.confirmPassword}
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        error={touched.confirmPassword && errors.confirmPassword}
+                        errorText={touched.confirmPassword ? errors.confirmPassword : undefined}
                     />
                     <div
                         className="w-full flex items-center justify-center gap-2 mt-4"
                     >
-                        <Button btnType="submit">
+                        <Button
+                            type="submit"
+                            disabled={isSubmitting}
+                        >
                             Sign up
                         </Button>
                         or
                         <Link 
                             href={AppRoutes.LOGIN}
-                            className="outline-none"
+                            className="outline-none w-full"
                         >
-                            <Button >
-                                Log in your account
+                            <Button>
+                                Create an account
                             </Button>
                         </Link>
                     </div>
