@@ -12,7 +12,7 @@ export const PostDashboard: FC<PostDashboardProps> = ({
 }) => {
   return (
     <div
-          className="bg-light w-full h-full rounded-md border-2 border-black max-h-[700px] max-w-[700px] min-w-[90%] text-text-dark"
+          className="bg-light w-full h-full rounded-md border-2 border-black max-h-[700px] min-w-[100%] text-text-dark"
         >
           <div
             className="flex gap-4 px-4 py-2 border-b-2 border-black h-1/6 max-h-[16.666667%] items-center"

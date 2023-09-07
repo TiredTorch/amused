@@ -9,7 +9,7 @@ export const SharedPost = () => {
         className="min-h-[500px] w-full"
     >
         <div
-            className="bg-emerald-600 h-1/6 p-2 flex gap-6"
+            className="bg-dark h-1/6 p-2 flex gap-6"
         >
             <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Congenital_absence_of_nose.jpg/300px-Congenital_absence_of_nose.jpg"
@@ -34,7 +34,7 @@ export const SharedPost = () => {
             </div>
         </div>
         <div
-            className="bg-emerald-400 h-5/6"
+            className="bg-light h-5/6"
         >
             
         </div>
