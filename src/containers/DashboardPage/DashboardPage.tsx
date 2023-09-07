@@ -11,7 +11,7 @@ export const DashboardPage = () => {
       className="h-[calc(100%-60px)]"
     >
       <div
-        className="bg-indigo-400 p-2 border-b-4 border-black rounded-b-2xl mb-2"
+        className="bg-light p-2 border-b-4 border-black rounded-b-2xl mb-2"
       >
         <Link href={AppRoutes.NEW_POST} className="w-full">
           <Button>

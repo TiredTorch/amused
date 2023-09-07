@@ -30,7 +30,7 @@ export const SearchForm: FC<SearchFormProps> = ({
                     className="w-full flex flex-col gap-4 items-center justify-center"
                 >
                     <div
-                        className="w-full flex items-center justify-center"
+                        className="w-full flex items-center justify-center rounded-lg overflow-hidden"
                     >
                         <Button
                             className="w-auto border-none rounded-none h-[46px]"

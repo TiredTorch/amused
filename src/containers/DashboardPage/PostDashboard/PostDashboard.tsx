@@ -12,7 +12,7 @@ export const PostDashboard: FC<PostDashboardProps> = ({
 }) => {
   return (
     <div
-          className="bg-cyan-600 w-full h-full rounded-md border-2 border-black max-h-[700px] max-w-[700px] min-w-[90%]"
+          className="bg-light w-full h-full rounded-md border-2 border-black max-h-[700px] max-w-[700px] min-w-[90%] text-text-dark"
         >
           <div
             className="flex gap-4 px-4 py-2 border-b-2 border-black h-1/6 max-h-[16.666667%] items-center"
@@ -31,7 +31,7 @@ export const PostDashboard: FC<PostDashboardProps> = ({
                     className="text-3xl"
                 >{userName}</span>
                 <span
-                    className="text-lg"
+                    className="text-lg text-text-primary"
                 >{dayjs(postDate).format("YYYY/MM/DD")}</span>
             </div>
           </div>

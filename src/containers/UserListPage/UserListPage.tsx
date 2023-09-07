@@ -1,7 +1,8 @@
 'use client'
 
-import { Button, SearchIcon } from "@components"
+import { Button, SearchForm, SearchIcon } from "@components"
 import { UserListLink } from "./UserListLink/UserListLink"
+import { SearchFormValuesType } from "@types"
 
 export const UserListPage = () => {
   return (
@@ -9,13 +10,14 @@ export const UserListPage = () => {
       className="h-[calc(100%-60px)]"
     >
       <div
-        className="bg-indigo-400 p-2 border-b-4 border-black rounded-b-2xl mb-2 flex items-center justify-center gap-4"
+        className="bg-light p-2 border-b-4 border-black rounded-b-2xl mb-2"
       >
-        <div>
-          <Button>
-            <SearchIcon/>
-          </Button>
-        </div>
+        <SearchForm 
+          onSubmit={console.log} 
+          initialValues={{
+            searchField: ""
+          }}
+        />
       </div>
       <div
         className="flex flex-col gap-3 w-full h-full overflow-auto p-4"

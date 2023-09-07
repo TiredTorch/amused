@@ -10,7 +10,7 @@ export const Input: InputProps = ({
 }) => {
     return (
         <div 
-            className="w-full flex flex-col border border-dark"
+            className="w-full flex flex-col"
         >
             {label && 
                 <label 
