@@ -66,6 +66,15 @@ export const LoginForm: FC<LoginFormProps> = ({
                             </Button>
                         </Link>
                     </div>
+                    <div
+                        className="w-full"
+                    >
+                        <Button
+                            type="button"
+                        >
+                            Log in via Google
+                        </Button>
+                    </div>
                 </Form>
             )}
         </Formik>
