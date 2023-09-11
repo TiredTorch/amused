@@ -4,12 +4,18 @@ import { ReactNode } from "react"
 import Link from "next/link"
 import { Button, DashboardIcon, UsersIcon, ProfileIcon } from "@components"
 import { AppRoutes } from "@types"
+import { useSession } from "next-auth/react"
+import { redirect } from "next/navigation"
 
 export const Layout = ({
     children
 }: {
     children: ReactNode
 }) => {
+    const { data: session } = useSession()
+
+    if (!session) redirect(AppRoutes.LOGIN)
+
     return (
         <div
             className="w-screen h-[100dvh] max-h-[100dvh] bg-text-primary font-semibold flex items-center justify-center overflow-hidden"

@@ -1,10 +1,19 @@
+'use client'
+
 import { ReactNode } from "react"
+import { useSession } from "next-auth/react"
+import { redirect } from "next/navigation"
+import { AppRoutes } from "@types"
 
 const Layout = ({
     children
 }: {
     children: ReactNode
 }) => {
+    const { data: session } = useSession()
+
+    if (session) redirect(AppRoutes.DASHBOARD)
+
     return (
         <section
             className="w-screen h-[100dvh] flex justify-center items-center bg-primary font-semibold"
