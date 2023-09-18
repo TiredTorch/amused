@@ -8,7 +8,7 @@ export const FileInput: FileInputProps = ({
     return (
         <div className="flex items-center w-full h-full">
             <label 
-                className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-primary"
+                className="flex flex-col items-center justify-center w-full h-64 border-2 border-text-primary border-dashed rounded-lg cursor-pointer bg-primary"
             >
                 <div className="flex flex-col items-center justify-center pt-5 pb-6">
                     <svg 

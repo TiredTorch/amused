@@ -1,10 +1,15 @@
 'use client'
 
+import { useRouter } from 'next/navigation'
 import Image from "next/image"
 import dividerImage from "@assets/divider-music.png"
-import { Dropdown, OptionsIcon } from "@components"
+import { Button, Dropdown, OptionsIcon } from "@components"
+import { signOut } from "next-auth/react"
+import { AppRoutes } from "@types"
 
 export const UserPageHeader = () => {
+  const router = useRouter()
+
   return (
     <div
         className="flex justify-between items-center flex-col h-1/3 pb-2 shadow-lg bg-light border-b-2 border-black"
@@ -31,7 +36,20 @@ export const UserPageHeader = () => {
             className="h-full flex justify-start items-start pt-4"
           >
             <Dropdown 
-              options={["Edit Profile", "Log out"]} 
+              options={[
+                <Button
+                    key="edit-button"
+                    onClick={() => router.push(AppRoutes.CONFIG_PROFILE)}
+                    >
+                    Edit Profile 
+                </Button>,
+                <Button
+                  key="logout-button"
+                  onClick={() => signOut()}
+                >
+                  Log out
+                </Button>
+              ]} 
               label={<OptionsIcon/>}
               hideShevron
             />

@@ -7,6 +7,7 @@ import { LoginFormProps } from "./LoginForm.types"
 import { loginFormValidationSchema } from "./LoginForm.validation"
 import { AppRoutes } from "@types"
 import Link from "next/link"
+import { signIn } from "next-auth/react"
 
 export const LoginForm: FC<LoginFormProps> = ({
     initialValues,
@@ -65,6 +66,16 @@ export const LoginForm: FC<LoginFormProps> = ({
                                 Create an account
                             </Button>
                         </Link>
+                    </div>
+                    <div
+                        className="w-full mt-4"
+                    >
+                        <Button
+                            type="button"
+                            onClick={() => signIn()}
+                        >
+                            Log in via Google
+                        </Button>
                     </div>
                 </Form>
             )}

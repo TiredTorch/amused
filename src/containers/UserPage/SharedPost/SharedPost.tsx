@@ -6,10 +6,10 @@ import Image from "next/image"
 export const SharedPost = () => {
   return (
     <div
-        className="min-h-[500px] w-full"
+        className="min-h-[500px] w-full border-2 border-black"
     >
         <div
-            className="bg-dark h-1/6 p-2 flex gap-6"
+            className="bg-dark h-1/6 p-2 flex gap-6 border-b-2 border-black"
         >
             <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Congenital_absence_of_nose.jpg/300px-Congenital_absence_of_nose.jpg"
@@ -27,7 +27,7 @@ export const SharedPost = () => {
                     User name
                 </span>
                 <span
-                    className="text-xl"
+                    className="text-lg italic font-light"
                 >
                     {dayjs().format("YYYY.MM.DD")}
                 </span>
