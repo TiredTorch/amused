@@ -1,18 +1,7 @@
-import { AuthOptions } from "next-auth"
+import { getAuthOptions } from "@utils"
 import NextAuth from "next-auth/next"
-import GoogleProvider from "next-auth/providers/google" 
 
-export const authOptions: AuthOptions = {
-    secret: "huge_secret",
-    providers: [
-        GoogleProvider({
-            clientId: "259253537168-jdqnurbiatoos6kdfbrvtg07c1s3t9eb.apps.googleusercontent.com",
-            clientSecret: "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"
-        })
-    ]
-}
-
-const handler =  NextAuth(authOptions)
+const handler = NextAuth(getAuthOptions())
 
 export { 
     handler as GET,

@@ -24,7 +24,8 @@
       "@types": ["./src/types"],
       "@containers": ["./src/containers"],
       "@assets/*": ["./src/assets/*"],
-      "@hocs/*": ["./src/hocs/*"],
+      "@hocs/*": ["./src/hocs"],
+      "@utils": ["./src/utils"],
       "@/*": ["./src/*"]
     }
   },
